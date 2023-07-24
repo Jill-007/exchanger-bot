@@ -12,6 +12,9 @@ theme: /goAnsCommon
         
     state: Ans_Exchanging
         script:
+            if: $parseTree._Numbers
+                script:
+                    $client.money = $parse.Tree._Numbers
             var money = []
             
     state: Ans_Currency_Exch_Rate
