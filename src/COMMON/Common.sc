@@ -14,3 +14,7 @@ theme: /commonQuestions
     state: Exchange_X_to_X
         q!: обменять 100 долларов 
         go!: /goAnsCommon/Ans_Exchanging
+        
+    state: Currency_Exchange_Rate
+        q!: курс валют
+        go!: /goAnsCommon/Ans_Currency_Exch_Rate
