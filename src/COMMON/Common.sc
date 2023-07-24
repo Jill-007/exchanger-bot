@@ -1,4 +1,4 @@
 theme: /commonQuestions
     
     state: Greeting
-        q!: 
+        q!: [$exchInterjection/да] 
