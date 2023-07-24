@@ -9,6 +9,11 @@ theme: /
         q!: $regex</start>
         a: Начнём.
 
+    state: Undef
+        event!: noMatch
+        a: Sorry, I don’t understand.
+        event: noMatch || toState = "/Undef_Ans/Undef"
+
     #state: Hello
     #    intent!: /привет
     #    a: Привет привет
