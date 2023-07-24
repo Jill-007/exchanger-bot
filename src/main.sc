@@ -21,6 +21,6 @@ theme: /
     #    event!: noMatch
     #    a: Я не понял. Вы сказали: {{$request.query}}
 
-    state: Match
-        event!: match
-        a: {{$context.intent.answer}}
+    #state: Match
+    #    event!: match
+    #    a: {{$context.intent.answer}}
