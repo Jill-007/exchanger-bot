@@ -11,9 +11,9 @@ tests:
     
 dependencies:
     - name: money
-    type: git
-    url: https://github.com/openexchangerates/money.js/blob/master/money.js
-    version: master
+      type: git
+      url: https://github.com/openexchangerates/money.js/blob/master/money.js
+      version: master
 
 nlp:
   intentNoMatchThresholds:
