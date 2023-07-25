@@ -8,8 +8,7 @@ theme: /goAnsCommon
         
         state: react_Exchanging
             q: 100 долларов
-            script:
-                return $reactions.transition("Ans_Exchanging");
+            go: Ans_Exchanging"
         
     state: Ans_Exchanging
         #script:
