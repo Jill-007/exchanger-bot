@@ -19,3 +19,9 @@ theme: /commonQuestions
     state: Currency_Exchange_Rate
         q!: курс валют
         go!: /goAnsCommon/Ans_Currency_Exch_Rate
+        
+    state: Hello
+        q!: * меня зовут $Name *
+        script:
+            setName($parseTree._Name.name);
+        a: Привет, {{$session.name}}!
