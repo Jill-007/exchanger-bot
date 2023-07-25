@@ -4,7 +4,7 @@
 require: requireAll.sc
 
 require: money.js
-    module = money
+    module = money.js
 
 theme: /
 
