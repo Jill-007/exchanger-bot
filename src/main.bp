@@ -8,5 +8,10 @@
     "name" : "Undef",
     "x" : 0,
     "y" : 0
+  }, {
+    "id" : "/NewState",
+    "name" : "NewState",
+    "x" : 762,
+    "y" : 434
   } ]
 }
