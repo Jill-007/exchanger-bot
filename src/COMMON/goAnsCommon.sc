@@ -6,9 +6,9 @@ theme: /goAnsCommon
     state: Ans_Exchanging_All
         a: Введите сумму и валюту.
         
-        state: react_Exchanging
+        state: Exchanging_Amount
             q: 100 долларов
-            go!: /goAnsCommon/Ans_Exchanging
+            a: Это будет 80000 рублей.
         
     state: Ans_Exchanging
         #script:
