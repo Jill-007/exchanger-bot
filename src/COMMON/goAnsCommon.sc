@@ -7,9 +7,11 @@ theme: /goAnsCommon
         a: Введите сумму и валюту.
         
         state: react_Exchanging
-            a: 100 долларов
             script:
-                return $reactions.transition("Ans_Exchanging");
+                console.log('hello')
+            a: 100 долларов
+            #script:
+            #    return $reactions.transition("Ans_Exchanging");
         
     state: Ans_Exchanging
        script:
