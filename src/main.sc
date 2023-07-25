@@ -3,8 +3,8 @@
   
 require: requireAll.sc
 
-#require: money.js
-#    module = money.js
+require: money.js
+    module = money.js
 
 theme: /
 
