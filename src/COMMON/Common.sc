@@ -20,15 +20,14 @@ theme: /commonQuestions
         q!: курс валют
         go!: /goAnsCommon/Ans_Currency_Exch_Rate
         
-    state: Hello
+    state: My_name_is
         q!: * меня зовут $Name *
         script:
             $session.name = $parseTree._Name.name;
         a: Привет, {{$session.name}}!
         
-    state: SumTwoNumbers
-        q!: * [чему равно] @duckling.number::numberOne (плюс/$regex<\+>) @duckling.number::numberTwo *
-        SumTwoNumbers:
-            numberOne = {{$parseTree._numberOne}}
-            numberTwo = {{$parseTree._numberTwo}}
-        a: Посчитать для вас что-нибудь еще?
+    state: Test_scripts
+        q!: script
+        script: 
+            var $rate = 102.5;
+        a: переменная {{$rate}}.
