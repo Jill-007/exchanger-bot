@@ -3,6 +3,9 @@
   
 require: requireAll.sc
 
+require: money.js
+    module = money
+
 theme: /
 
     state: Start
