@@ -5,13 +5,15 @@ theme: /goAnsCommon
         
     state: Ans_Exchanging_All
         a: Введите сумму и валюту.
+        script:
+            alert('hello')
         
         state: react_Exchanging
-            script:
-                alert('hello')
-            a: 100 долларов
             #script:
-            #    return $reactions.transition("Ans_Exchanging");
+            #    alert('hello')
+            q!: 100 долларов
+            script:
+                return $reactions.transition("Ans_Exchanging");
         
     state: Ans_Exchanging
        script:
