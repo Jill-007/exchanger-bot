@@ -9,11 +9,11 @@ tests:
   include:
     - test.xml
     
-dependencies:
-    - name: money.js
-      type: git
-      url: https://github.com/openexchangerates/money.js
-      version: master
+#dependencies:
+#    - name: money.js
+#      type: git
+#      url: https://github.com/openexchangerates/money.js
+#      version: master
 
 nlp:
   intentNoMatchThresholds:
