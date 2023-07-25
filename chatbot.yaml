@@ -12,7 +12,7 @@ tests:
 dependencies:
     - name: money.js
       type: git
-      url: https://github.com/openexchangerates/money.js/blob/master/money.js
+      url: https://github.com/openexchangerates/money.js
       version: master
 
 nlp:
