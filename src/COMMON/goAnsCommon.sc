@@ -8,7 +8,7 @@ theme: /goAnsCommon
         
         state: react_Exchanging
             script:
-                console.log('hello')
+                alert('hello')
             a: 100 долларов
             #script:
             #    return $reactions.transition("Ans_Exchanging");
