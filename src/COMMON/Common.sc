@@ -27,7 +27,7 @@ theme: /commonQuestions
         a: Привет, {{$session.name}}!
         
     state: Test_scripts
-        q!: script
+        q!: скрипт
         script: 
             var rate = 102.5;
         a: переменная {{rate}}.
