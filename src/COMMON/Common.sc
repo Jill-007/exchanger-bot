@@ -29,5 +29,5 @@ theme: /commonQuestions
     state: Test_scripts
         q!: script
         script: 
-            var $rate = 102.5;
-        a: переменная {{$rate}}.
+            var rate = 102.5;
+        a: переменная {{rate}}.
