@@ -23,5 +23,5 @@ theme: /commonQuestions
     state: Hello
         q!: * меня зовут $Name *
         script:
-            setName($parseTree._Name.name);
+            $session.name = $parseTree._Name.name;
         a: Привет, {{$session.name}}!
