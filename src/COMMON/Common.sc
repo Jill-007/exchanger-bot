@@ -25,3 +25,10 @@ theme: /commonQuestions
         script:
             $session.name = $parseTree._Name.name;
         a: Привет, {{$session.name}}!
+        
+    state: SumTwoNumbers
+        q!: * [чему равно] @duckling.number::numberOne (плюс/$regex<\+>) @duckling.number::numberTwo *
+        SumTwoNumbers:
+            numberOne = {{$parseTree._numberOne}}
+            numberTwo = {{$parseTree._numberTwo}}
+        a: Посчитать для вас что-нибудь еще?
