@@ -16,7 +16,7 @@ theme: /goAnsCommon
                 return $reactions.transition("Ans_Exchanging");
         
     state: Ans_Exchanging
-       script:
+        script:
             var $client.exch_var = fx.(100).from("USD").to("RUB");
         a: Это будет {{$client.exch_var}} рублей.
             
