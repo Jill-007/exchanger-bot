@@ -8,7 +8,7 @@ theme: /goAnsCommon
         
         state: react_Exchanging
             q: 100 долларов
-            go: Ans_Exchanging
+            go!: /goAnsCommon/Ans_Exchanging
         
     state: Ans_Exchanging
         #script:
