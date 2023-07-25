@@ -9,7 +9,8 @@ theme: /goAnsCommon
         state: Exchanging_Amount
             q: 100 долларов
             script:
-                $reactions.transition("/goAnsCommon/Ans_Exchanging")
+                $reactions.transition("/goAnsCommon/Ans_Exchanging");
+                alert('Hello');
         
     state: Ans_Exchanging
         #script:
