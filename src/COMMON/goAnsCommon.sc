@@ -13,7 +13,7 @@ theme: /goAnsCommon
         
     state: Ans_Exchanging
        script:
-            var $exch_var = fx.convert(12.99, {from: "USD", to: "RUB"});
+            var $exch_var = fx.(100).from("USD").to("RUB");
             return $reactions.answer("Это будет {{$exch_var}} рублей.");
             
     state: Ans_Currency_Exch_Rate
