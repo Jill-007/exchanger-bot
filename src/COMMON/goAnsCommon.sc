@@ -13,7 +13,8 @@ theme: /goAnsCommon
         
     state: Ans_Exchanging
         script:
-            var $client.exch_var = fx.(100).from("USD").to("RUB");
+            #var $client.exch_var = fx.convert(100, "RUB");
+            var $client.exch_var = 50;
         a: Это будет {{$client.exch_var}} рублей.
         #a: Это будет 80. 000 рублей.
             
