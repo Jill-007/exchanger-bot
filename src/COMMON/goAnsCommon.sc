@@ -10,12 +10,12 @@ theme: /goAnsCommon
             a: 100 долларов
             go: Ans_Exchanging
         
-    state: Ans_Exchanging
-        script:
-            if: $parseTree._Numbers
-                script:
-                    $client.money = $parse.Tree._Numbers
-            var money = []
+    #state: Ans_Exchanging
+    #   script:
+    #        if: $parseTree._Numbers
+    #            script:
+    #                $client.money = $parse.Tree._Numbers
+    #        var money = []
             
     state: Ans_Currency_Exch_Rate
         a: Актуальный находится на сайте <a href="https://www.cbr.ru/currency_base/daily/" target="_blank">Банка России</a>. 
