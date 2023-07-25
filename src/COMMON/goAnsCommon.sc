@@ -5,8 +5,8 @@ theme: /goAnsCommon
         
     state: Ans_Exchanging_All
         a: Введите сумму и валюту.
-        script:
-            alert('hello');
+        #script:
+        #    alert('hello');
         
         state: react_Exchanging
             #script:
