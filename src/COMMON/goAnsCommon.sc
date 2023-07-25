@@ -13,8 +13,8 @@ theme: /goAnsCommon
         
     state: Ans_Exchanging
        script:
-            var exch_var = fx.convert(12.99, {from: "USD", to: "RUB"});
-            return $reactions.answer("Это будет {{exch_var}} рублей.");
+            var $exch_var = fx.convert(12.99, {from: "USD", to: "RUB"});
+            return $reactions.answer("Это будет {{$exch_var}} рублей.");
             
     state: Ans_Currency_Exch_Rate
         a: Актуальный находится на сайте <a href="https://www.cbr.ru/currency_base/daily/" target="_blank">Банка России</a>. 
