@@ -28,9 +28,8 @@ theme: /commonQuestions
         
     state: Test_scripts
         q!: (здесь/pltcm)
-        script: 
-            var rate = 102.5;
-            $reactions.answer('переменная ' + rate)
+        go!: /goAnsCommon/VarTest
+        
         
         #//какой сегодня курс
         #//скажи курс
