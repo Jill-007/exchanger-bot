@@ -30,7 +30,7 @@ theme: /commonQuestions
         q!: скрипт
         script: 
             var rate = 102.5;
-            $reactions.answer("переменная" + rate + ".")
+            $reactions.answer("переменная " + rate)
         
         #//какой сегодня курс
         #//скажи курс
