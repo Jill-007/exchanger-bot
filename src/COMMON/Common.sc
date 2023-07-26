@@ -35,6 +35,12 @@ theme: /commonQuestions
             $reactions.answer('переменная ' + rate);
             log("выдал ответ");
         
+    state: Experiment
+        q!: expm
+        script:
+            var exch = fx(1).from("USD").to("RUB");
+            log("что там с курсом");
+            $reactions.answer(exch);
         #//какой сегодня курс
         #//скажи курс
         #//а что за курс/что с курсом/по чем доллар сегодня/расскажи про курс/хочу поменять/обменять валюту/доллары/евро/деньги
