@@ -32,7 +32,7 @@ theme: /commonQuestions
         q!: варс
         script: 
             var rate = 102.5;
-        $reactions.answer(rate)
+            $reactions.answer(rate);
         
         
         #//какой сегодня курс
