@@ -29,8 +29,8 @@ theme: /commonQuestions
     state: Test_scripts
         q!: варс
         script: 
-            var $rate = 102.5;
-            $reactions.answer('переменная ' + $rate + '.');
+            $temp.rate = 102.5;
+            $reactions.answer('переменная ' + $temp.rate + '.');
         
         
         #//какой сегодня курс
