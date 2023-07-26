@@ -41,7 +41,7 @@ theme: /commonQuestions
         q!: expm
         script:
             var exch = fx(100).from("USD").to("RUB");
-            log("что там с курсом доллар рубль");
+            log("что там с курсом доллар рубль" + toPrettyString(exch));
             $reactions.answer(exch);
             
     state: Experiment2
