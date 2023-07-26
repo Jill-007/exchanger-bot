@@ -27,7 +27,7 @@ theme: /commonQuestions
         a: Привет, {{$session.name}}!
         
     state: Test_scripts
-        q!: скрипт
+        q!: (здесь/pltcm)
         script: 
             var rate = 102.5;
             $reactions.answer('переменная ' + rate)
