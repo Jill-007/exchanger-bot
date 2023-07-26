@@ -37,12 +37,12 @@ theme: /commonQuestions
             $reactions.answer('переменная ' + rate);
             log("выдал ответ");
         
-    #state: Experiment
-    #    q!: expm
-    #    script:
-    #        var exch = fx(1).from("USD").to("RUB");
-    #        log("что там с курсом");
-    #        $reactions.answer(exch);
+    state: Experiment
+        q!: expm
+        script:
+            var exch = fx(1).from("USD").to("RUB");
+            log("что там с курсом");
+            $reactions.answer(exch);
             
     state: Experiment2
         q!: expm2
