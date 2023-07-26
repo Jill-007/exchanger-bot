@@ -21,9 +21,9 @@ theme: /commonQuestions
         go!: /goAnsCommon/Ans_Currency_Exch_Rate
         
     state: My_name_is
-        q!: * меня зовут $Name *
+        q!: * меня зовут $Imena *
         script:
-            $session.name = $parseTree._Name.name;
+            $session.name = $parseTree._Imena;
         a: Привет, {{$session.name}}!
         
     state: Test_scripts
