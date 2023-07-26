@@ -40,13 +40,20 @@ theme: /commonQuestions
     state: Experiment
         q!: expm
         script:
-            var exch = fx(1).from("USD").to("RUB");
-            log("что там с курсом");
+            var exch = fx(100).from("USD").to("RUB");
+            log("что там с курсом доллар рубль");
             $reactions.answer(exch);
             
     state: Experiment2
         q!: expm2
         a: fx(1).from("USD").to("RUB").
+        
+    state: Experiment3
+        q!: expm3
+        script:
+            var exch2 = fx.convert(12.99, {from: "GBP", to: "HKD"});;
+            log("что там с курсом фунт гонконг");
+            $reactions.answer(exch2);
                
     
         #//какой сегодня курс
