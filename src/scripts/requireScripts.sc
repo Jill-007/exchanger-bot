@@ -1,1 +1,1 @@
-#require: money.js
+require: money.js
