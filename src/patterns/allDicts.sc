@@ -1,4 +1,5 @@
-require: dict_b.sc
-require: dict_g.sc
-require: dict_n.sc
-require: miscDicts.sc
+require: b.sc
+require: g.sc
+require: i.sc
+require: n.sc
+require: otherDicts.sc
