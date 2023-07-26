@@ -24,7 +24,7 @@ theme: /commonQuestions
         q!: * меня зовут $Imena *
         script:
             $session.name = $parseTree._Imena;
-        a: Привет, {{capitalize({{$session.name}})}}!
+        a: Привет, {{capitalize($session.name)}}!
         
     state: Test_scripts
         q!: варс
