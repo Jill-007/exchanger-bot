@@ -46,7 +46,6 @@ theme: /commonQuestions
             
     state: Experiment2
         q!: expm2
-        script:
         a: fx(1).from("USD").to("RUB").
                
     
