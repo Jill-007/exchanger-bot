@@ -23,4 +23,4 @@ theme: /goAnsCommon
     state: VarTest
         script: 
             var rate = 102.5;
-            $reactions.answer('переменная ' + rate);
+            $reactions.answer('переменная {{ rate }}');
