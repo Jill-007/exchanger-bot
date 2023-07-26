@@ -8,7 +8,7 @@ theme: /commonQuestions
         
         
     state: Wanna_Exchange
-        q!: хочу обменять валюту
+        q!: (хочу/мне (надо/нужно/хотелось бы)) (обменять/поменять) валюту
         q!: обмен
         go!: /goAnsCommon/Ans_Exchanging_All
         
