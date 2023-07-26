@@ -19,8 +19,3 @@ theme: /goAnsCommon
             
     state: Ans_Currency_Exch_Rate
         a: Актуальный находится на сайте <a href="https://www.cbr.ru/currency_base/daily/" target="_blank">Банка России</a>. 
-
-    state: VarTest
-        script: 
-            var $rate = 102.5;
-            $reactions.answer('переменная {{ $rate }}');
