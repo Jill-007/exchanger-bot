@@ -17,7 +17,6 @@ theme: /commonQuestions
         q!: обменять 100 долларов 
         go!: /goAnsCommon/Ans_Exchanging
         
-    #общий стейт про курс/курс другие валюты кроме доллара, евро
     state: Currency_Exchange_Rate
         q!: курс валют
         go!: /goAnsCommon/Ans_Currency_Exch_Rate
