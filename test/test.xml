@@ -5,6 +5,6 @@
         <q>Привет</q>
         <a state = "/goAnsCommon/Ans4_Greeting"/>
         <q>Как дела</q>
-        <a state = "/NoMatch"/>
+        <a state = "/Undef_Ans/Undef"/>
     </test-case>
 </test>    
