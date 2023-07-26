@@ -1,5 +1,8 @@
 require: slotfilling/slotFilling.sc
     module = sys.zb-common
+    
+require: name/name.sc
+    module = sys.zb-common
   
 require: requireAll.sc
 
