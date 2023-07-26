@@ -30,7 +30,7 @@ theme: /commonQuestions
     state: Test_scripts
         q!: варс
         script: 
-            var rate = 102.5;
+            var $rate = 102.5;
             log("запоминаю переменную");
             $reactions.answer('переменная {{$rate}}');
             log("выдал ответ");
