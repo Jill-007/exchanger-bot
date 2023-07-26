@@ -32,7 +32,7 @@ theme: /commonQuestions
         script: 
             var rate = 102.5;
             log("запоминаю переменную");
-            $reactions.answer('переменная' + rate');
+            $reactions.answer('переменная ' + rate);
             log("выдал ответ");
         
         #//какой сегодня курс
