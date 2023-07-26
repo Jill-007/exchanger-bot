@@ -1,3 +1,5 @@
+require: /scripts/money.js
+
 theme: /commonQuestions
     
     state: Greeting
@@ -35,12 +37,19 @@ theme: /commonQuestions
             $reactions.answer('переменная ' + rate);
             log("выдал ответ");
         
-    state: Experiment
-        q!: expm
+    #state: Experiment
+    #    q!: expm
+    #    script:
+    #        var exch = fx(1).from("USD").to("RUB");
+    #        log("что там с курсом");
+    #        $reactions.answer(exch);
+            
+    state: Experiment2
+        q!: expm2
         script:
-            var exch = fx(1).from("USD").to("RUB");
-            log("что там с курсом");
-            $reactions.answer(exch);
+        a: fx(1).from("USD").to("RUB").
+               
+    
         #//какой сегодня курс
         #//скажи курс
         #//а что за курс/что с курсом/по чем доллар сегодня/расскажи про курс/хочу поменять/обменять валюту/доллары/евро/деньги
