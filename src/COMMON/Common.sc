@@ -31,8 +31,8 @@ theme: /commonQuestions
         q!: варс
         script: 
             var rate = 102.5;
-            $reactions.answer(rate);
-        
+        #    $reactions.answer(rate);
+        a: переменная {{rate}}.
         
         #//какой сегодня курс
         #//скажи курс
