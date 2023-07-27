@@ -48,7 +48,7 @@ function get() {
     log("trying to get http")
     var response = $http.get("https://www.cbr-xml-daily.ru/daily_utf8.xml");
     if (response.isOk) {
-        ls = response.data.ValCurs.Valute
+        var ls = response.data.ValCurs.Valute;
         for (var i=0; i<ls.length; i++){
             log(ls[i], i)   
         }
