@@ -48,7 +48,10 @@ function get() {
     log("trying to get http")
     var response = $http.get("https://www.cbr-xml-daily.ru/daily_utf8.xml");
     if (response.isOk) {
-        log(Object.keys(response.data.ValCurs.Valute))
+        ls = response.data.ValCurs.Valute
+        for (var i=0; i<ls.length; i++){
+            log(ls[i], i)   
+        }
         // $temp.degree = response.data.current.temperature;
     }
     log("got http")
