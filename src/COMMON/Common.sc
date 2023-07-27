@@ -3,9 +3,9 @@
 theme: /commonQuestions
     
     state: Greeting
-        q!: [$exchInterjection/да] {[$exchBotSg/ты/тебе/те/вам] (привет/здрасьте/здравствуй*)} [уже/же/ж]
-        q!: [$exchInterjection/да] {$exchGoodAdjNomMNt (утро/день/вечер)}
-        q!: [$exchInterjection/да] (доброй ночи/$exchGoodAdjGenMNt (утра/дня/вечера/времени суток))
+        q!: [$interjection/да] {[$botSg/ты/тебе/те/вам] (привет/здрасьте/здравствуй*)} [уже/же/ж]
+        q!: [$interjection/да] {$goodAdjNomMNt (утро/день/вечер)}
+        q!: [$interjection/да] (доброй ночи/$goodAdjGenMNt (утра/дня/вечера/времени суток))
         go!: /goAnsCommon/Ans4_Greeting
         
         
@@ -65,3 +65,4 @@ theme: /commonQuestions
         #//какой курс доллара на сегодняшний день
         #//какой курс евра на сегодняшний день
         #//доллары/баксы/зелень/американские деньги/рубли/франклины
+        #//знаешь курс?
