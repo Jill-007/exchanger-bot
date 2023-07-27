@@ -12,7 +12,7 @@ function httpGetAsync(theUrl, callback)
                 continue
             }
             if (ls[i].ID == "R01235") {
-                $tmp.USD_value = ls[i].Value;
+                $temp.USD_value = ls[i].Value;
             }
             log(ls[i].Value) 
         }
