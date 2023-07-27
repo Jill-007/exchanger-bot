@@ -54,8 +54,8 @@ theme: /commonQuestions
     state: Experiment3
         q!: expm3
         script:
-            var eur = httpGetAsync("https://www.cbr-xml-daily.ru/daily_utf8.xml", "R01239");
-            var usd = httpGetAsync("https://www.cbr-xml-daily.ru/daily_utf8.xml", "R01235");
+            var eur = httpGetAsync("R01239");
+            var usd = httpGetAsync("R01235");
             log("а теперь через xml");
             $reactions.answer("EURO: "+eur+";\n"+"USD: "+usd);
         

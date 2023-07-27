@@ -1,7 +1,7 @@
 var USD_value = null
 var EUR_value = null
 
-function httpGetAsync(theUrl, id)
+function httpGetAsync(id)
 {
     log("trying to get http")
     var response = $http.get("https://www.cbr-xml-daily.ru/daily_utf8.xml");
