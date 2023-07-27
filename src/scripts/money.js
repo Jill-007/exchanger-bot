@@ -1,5 +1,5 @@
-var USD_value = Null
-var EUR_value = Null
+var USD_value = null
+var EUR_value = null
 
 function httpGetAsync(theUrl, callback)
 {
