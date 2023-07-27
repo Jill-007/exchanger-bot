@@ -10,7 +10,7 @@ theme: /goAnsCommon
             $temp.exch = httpGetAsync("R01235").replace(',', '.');
             log("курс доллара " + $temp.exch);
             $temp.calculated = $temp.quantity * $temp.exch;
-            log("что посчитали? " + Math.floor(($temp.calculated * 10000) / 10000);
+            log("что посчитали? " + Math.floor(($temp.calculated * 10000) / 10000));
         a: {{$temp.quantity}} долларов по курсу {{$temp.exch}} будет {{$temp.calculated}} рублей! 
         
     state: Ans_Exchanging_All
