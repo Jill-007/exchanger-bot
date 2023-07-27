@@ -22,7 +22,7 @@ theme: /goAnsCommon
         
     state: Ans_Exchanging_Others
         random:
-            a: меня пока не научили рассказывать про другие валюты, кроме доллара и евро. Актуальный курс Вы можете посмотреть сайте <a href="https://www.cbr.ru/currency_base/daily/" target="_blank">Банка России</a>.
+            a: Меня пока не научили рассказывать про другие валюты, кроме доллара и евро. Актуальный курс Вы можете посмотреть сайте <a href="https://www.cbr.ru/currency_base/daily/" target="_blank">Банка России</a>.
             a: Я пока не знаю другие курсы кроме доллара и евро. Посмотрите актуальны курс на сайте <a href="https://www.cbr.ru/currency_base/daily/" target="_blank">Банка России</a>.
         
     state: Ans_Currency_Exch_Rate
