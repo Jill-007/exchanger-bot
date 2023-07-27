@@ -7,8 +7,8 @@ theme: /goAnsCommon
         script:
             $temp.quantity = $parseTree._Number;
             log("что в переменной кол-во: " + $temp.quantity);
-            $temp.exch = httpGetAsync("R01235");
-            log("курс доллара " + $temp.exch.replace(',', '.'));
+            $temp.exch = httpGetAsync("R01235").replace(',', '.');
+            log("курс доллара " + $temp.exch);
             $temp.calculated = $temp.quantity*$temp.exch;
             log("что посчитали? " + $temp.calculated);
             $temp.multiply = 10 * 90.0225;
