@@ -57,7 +57,7 @@ theme: /commonQuestions
             get()
             # httpGetAsync("https://www.cbr-xml-daily.ru/daily_utf8.xml", USD);
             log("а теперь через xml");
-            $reactions.answer('tut');
+            $reactions.answer(USD_value);
         
         #//какой сегодня курс
         #//скажи курс

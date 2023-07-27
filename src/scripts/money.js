@@ -3,28 +3,24 @@ var EUR_value = null
 
 function httpGetAsync(theUrl, callback)
 {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.onreadystatechange = function() { 
-        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-            callback(xmlHttp.responseText);
+    log("trying to get http")
+    var response = $http.get("https://www.cbr-xml-daily.ru/daily_utf8.xml");
+    if (response.isOk) {
+        callback(USD)
+        // $temp.degree = response.data.current.temperature;
     }
-    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
-    xmlHttp.send(null);
+    log("got http")
 }
 
 function USD(resp) {
 
-  resp = ( new window.DOMParser() ).parseFromString(resp, "text/xml");
-
-  valutes = resp.getElementsByTagName("Valute")
-  for (var i = 0; i<=valutes.length; i++) {
-    if (valutes[i] == undefined) {
-      continue;
+    var ls = response.data.ValCurs.Valute;
+    for (var i=0; i<ls.length; i++){
+        if (ls[i].ID == "R01235") {
+            USD_value = ls[i].Value;
+        }
+        log(ls[i].Value)   
     }
-    if (valutes[i].getAttribute("ID") == "R01235") {
-      USD_value = valutes[i].getElementsByTagName("Value")[0].childNodes[0].nodeValue;
-    }
-  }
 
 }
 
