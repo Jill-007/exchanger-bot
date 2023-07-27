@@ -37,8 +37,8 @@ theme: /commonQuestions
             $reactions.answer('переменная ' + rate);
             log("выдал ответ");
         
-    state: Experiment3
-        q!: expm3
+    state: Experiment2
+        q!: expm2
         script:
             var exch2 = fx.convert(12.99, {from: "GBP", to: "HKD"});;
             log("что там с курсом фунт гонконг");
@@ -50,13 +50,11 @@ theme: /commonQuestions
             var exch = fx(100).from("USD").to("RUB");
             log("что там с курсом доллар рубль" + exch);
             $reactions.answer(exch);
-            
-    state: Experiment2
-        q!: expm2
-        a: fx(1).from("USD").to("RUB").
-        
-               
     
+    state: Experiment3
+        q!: expm3
+        a: {{httpGetAsync("https://www.cbr-xml-daily.ru/daily_utf8.xml", USD)}}
+        
         #//какой сегодня курс
         #//скажи курс
         #//а что за курс/что с курсом/по чем доллар сегодня/расскажи про курс/хочу поменять/обменять валюту/доллары/евро/деньги
