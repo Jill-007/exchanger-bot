@@ -19,7 +19,7 @@ function USD(resp) {
         if (ls[i].ID == "R01235") {
             USD_value = ls[i].Value;
         }
-        log(ls[i].Value)   
+        log(ls[i].Value) 
     }
 
 }
