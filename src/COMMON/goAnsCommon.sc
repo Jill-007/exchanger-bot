@@ -6,9 +6,9 @@ theme: /goAnsCommon
     state: Ans_Exchanging_All
         a: Какая валюта Вас интересует?
         buttons:
-            "доллар" -> /Ans_Exchanging_USD
-            "евро" -> /Ans_Exchanging_Euro
-            "другая валюта" -> /Ans_Exchanging_Others
+            "доллар" -> Ans_Exchanging_USD
+            "евро" -> Ans_Exchanging_Euro
+            "другая валюта" -> Ans_Exchanging_Others
     
     state: Ans_Exchanging_USD
         script:
