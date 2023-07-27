@@ -1,4 +1,4 @@
-#require: /scripts/money.js
+require: /scripts/money.js
 
 theme: /commonQuestions
     
