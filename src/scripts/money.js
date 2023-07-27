@@ -13,7 +13,7 @@ function httpGetAsync(theUrl, callback)
             }
             if (ls[i].ID == "R01235") {
                 log(ls[i].Value)
-                // USD_value = ls[i].Value;
+                $USD_value = ls[i].Value;
             }
         }
         // $temp.degree = response.data.current.temperature;
