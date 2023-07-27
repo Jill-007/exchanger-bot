@@ -29,7 +29,8 @@ function USD(response) {
             continue
         }
         if (ls[i].ID == "R01235") {
-            USD_value = ls[i].Value;
+            console.log(ls[i].Value)
+            // USD_value = ls[i].Value;
         }
         log(ls[i].Value) 
     }
