@@ -15,7 +15,6 @@ function httpGetAsync(theUrl, callback)
                 log(ls[i].Value)
                 // USD_value = ls[i].Value;
             }
-            log(ls[i].Value) 
         }
         // $temp.degree = response.data.current.temperature;
     }
