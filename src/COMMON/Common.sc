@@ -36,21 +36,7 @@ theme: /commonQuestions
             log("запоминаю переменную");
             $reactions.answer('переменная ' + rate);
             log("выдал ответ");
-        
-    state: Experiment2
-        q!: expm2
-        script:
-            var exch2 = fx.convert(12.99, {from: "GBP", to: "HKD"});;
-            log("что там с курсом фунт гонконг");
-            $reactions.answer(exch2);
-    
-    state: Experiment
-        q!: expm
-        script:
-            var exch = fx(100).from("USD").to("RUB");
-            log("что там с курсом доллар рубль" + exch);
-            $reactions.answer(exch);
-    
+   
     state: Experiment3
         q!: expm3
         script:
