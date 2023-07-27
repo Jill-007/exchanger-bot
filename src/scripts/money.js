@@ -16,6 +16,9 @@ function USD(response) {
 
     var ls = response.data.ValCurs.Valute;
     for (var i=0; i<ls.length; i++){
+        if (ls[i]==undefined) {
+            continue
+        }
         if (ls[i].ID == "R01235") {
             USD_value = ls[i].Value;
         }
