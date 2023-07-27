@@ -6,8 +6,11 @@ theme: /goAnsCommon
     state: Ans_Exchanging
         script:
             $temp.quantity = $parseTree._Number;
+            log("что в переменной кол-во: " + $temp.quantity);
             $temp.exch = httpGetAsync("R01235");
+            log("курс доллара " + $temp.exch);
             $temp.calculated = $temp.quantity * $temp.exch;
+            log("что посчитали? " + $temp.exch)
         a: {{$temp.quantity}} долларов будет {{$temp.calculated}} рублей! 
         
     state: Ans_Exchanging_All

@@ -16,7 +16,7 @@ theme: /commonQuestions
         go!: /goAnsCommon/Ans_Exchanging_All
         
     state: Exchange_X_to_X
-        q!: обменять 100 долларов 
+        q!: обменять $Number долларов 
         go!: /goAnsCommon/Ans_Exchanging
         
     state: Currency_Exchange_Rate
