@@ -11,7 +11,7 @@ theme: /goAnsCommon
             log("курс доллара " + $temp.exch);
             $temp.calculated = $temp.quantity * $temp.exch;
             log("что посчитали? " + $temp.exch)
-        a: {{$temp.quantity}} долларов будет {{$temp.calculated}} рублей! 
+        a: {{$temp.quantity}} долларов по курсу {{$temp.exch}} будет {{$temp.calculated}} рублей! 
         
     state: Ans_Exchanging_All
         a: Какая валюта Вас интересует?
