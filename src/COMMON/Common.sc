@@ -54,7 +54,8 @@ theme: /commonQuestions
     state: Experiment3
         q!: expm3
         script:
-            httpGetAsync("https://www.cbr-xml-daily.ru/daily_utf8.xml", USD);
+            get()
+            # httpGetAsync("https://www.cbr-xml-daily.ru/daily_utf8.xml", USD);
             log("а теперь через xml");
             $reactions.answer(USD_value);
         
