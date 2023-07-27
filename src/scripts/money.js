@@ -12,7 +12,7 @@ function httpGetAsync(theUrl, callback)
     log("got http")
 }
 
-function USD(resp) {
+function USD(response) {
 
     var ls = response.data.ValCurs.Valute;
     for (var i=0; i<ls.length; i++){
