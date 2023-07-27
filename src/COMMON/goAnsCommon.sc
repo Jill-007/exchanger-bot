@@ -9,7 +9,7 @@ theme: /goAnsCommon
             log("что в переменной кол-во: " + $temp.quantity);
             $temp.exch = httpGetAsync("R01235");
             log("курс доллара " + $temp.exch);
-            $temp.calculated = $temp.quantity * $temp.exch;
+            $temp.calculated = $temp.quantity * $temp.exch
             log("что посчитали? " + $temp.exch)
         a: {{$temp.quantity}} долларов по курсу {{$temp.exch}} будет {{$temp.calculated}} рублей! 
         
