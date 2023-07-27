@@ -8,10 +8,10 @@ theme: /goAnsCommon
             $temp.quantity = $parseTree._Number;
             log("что в переменной кол-во: " + $temp.quantity);
             $temp.exch = httpGetAsync("R01235");
-            log("курс доллара " + $temp.exch);
+            log("курс доллара " + $temp.exch.replace(',', '.'));
             $temp.calculated = $temp.quantity*$temp.exch;
-            log("что посчитали? " + $temp.calculated)
-            $temp.multiply = 10 * 90.0225
+            log("что посчитали? " + $temp.calculated);
+            $temp.multiply = 10 * 90.0225;
         a: {{$temp.multiply}}. {{$temp.quantity}} долларов по курсу {{$temp.exch}} будет {{$temp.calculated}} рублей! 
         
     state: Ans_Exchanging_All
