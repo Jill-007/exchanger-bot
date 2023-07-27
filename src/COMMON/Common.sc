@@ -1,5 +1,4 @@
 #require: /scripts/money.js
-require: /money.js/money.min.js
 
 theme: /commonQuestions
     
