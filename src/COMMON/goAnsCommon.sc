@@ -9,9 +9,10 @@ theme: /goAnsCommon
             log("что в переменной кол-во: " + $temp.quantity);
             $temp.exch = httpGetAsync("R01235");
             log("курс доллара " + $temp.exch);
-            $temp.calculated = ($temp.quantity * $temp.exch);
+            $temp.calculated = $temp.quantity*$temp.exch;
             log("что посчитали? " + $temp.calculated)
-        a: {{$temp.quantity}} долларов по курсу {{$temp.exch}} будет {{$temp.calculated}} рублей! 
+            $temp.multiply = 10 * 90,0225
+        a: {{$temp.multiply}}. {{$temp.quantity}} долларов по курсу {{$temp.exch}} будет {{$temp.calculated}} рублей! 
         
     state: Ans_Exchanging_All
         a: Какая валюта Вас интересует?
