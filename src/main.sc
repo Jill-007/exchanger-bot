@@ -3,6 +3,9 @@ require: slotfilling/slotFilling.sc
     
 require: name/name.sc
     module = sys.zb-common
+    
+require: floatNumber/floatNumber.sc
+    module = sys.zb-common
   
 #require: money.js
 #    module = money.js

@@ -3,6 +3,13 @@ theme: /goAnsCommon
     state: Ans4_Greeting
         a: Приветствую!
         
+    state: Ans_Exchanging
+        script:
+            $temp.quantity = $parseTree._Number;
+            $temp.exch = httpGetAsync("R01235");
+            $temp.calculated = $temp.quantity * $temp.exch;
+        a: {{$temp.quantity}} долларов будет {{$temp.calculated}} рублей! 
+        
     state: Ans_Exchanging_All
         a: Какая валюта Вас интересует?
         buttons:
