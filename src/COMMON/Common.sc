@@ -1,5 +1,5 @@
 #require: /scripts/money.js
-require: money.js/money.min.js
+require: https://github.com/openexchangerates/money.js/money.min.js
 
 theme: /commonQuestions
     
