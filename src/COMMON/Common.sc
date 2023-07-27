@@ -53,7 +53,10 @@ theme: /commonQuestions
     
     state: Experiment3
         q!: expm3
-        a: {{httpGetAsync("https://www.cbr-xml-daily.ru/daily_utf8.xml", USD)}}
+        script:
+            httpGetAsync("https://www.cbr-xml-daily.ru/daily_utf8.xml", USD);
+            log("а теперь через xml");
+            $reactions.answer(USD_value);
         
         #//какой сегодня курс
         #//скажи курс
