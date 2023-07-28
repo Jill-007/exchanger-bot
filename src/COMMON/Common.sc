@@ -10,6 +10,7 @@ theme: /commonQuestions
         
         
     state: Wanna_Exchange
+        q!: [какой/$pleaseIntj/$information] {(курс/$about курсе)
         q!: хочу (обменять/поменять) валюту
         q!: мне (надо/нужно/хотелось бы) (обменять/поменять) валюту
         q!: обмен
@@ -20,9 +21,27 @@ theme: /commonQuestions
         go!: /goAnsCommon/Ans_Exchanging
         
     state: Currency_Exchange_Rate
-        q!: курс валют
+        q!: курс (валют/валюты)
         go!: /goAnsCommon/Ans_Currency_Exch_Rate
         
+    
+	state: USD_rate
+		q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Dollar} [какой/$pleaseIntj/$information]
+		q!: {курс (валют*/обмен*)} $Dollar
+		q!: [у] $Dollar {курс (валют*/обмен*)}
+		q!: * {$Dollar ($todayNNom/$todayAdj)} *
+		q!: * $change [наличн*] $Dollar *
+		q!: * $Dollar [наличн*] $change*
+		q!: * $wanna * $change * $Dollar *
+		q!: * {($what/$whatA) * курс * $Dollar} * $todayNNom *
+		q!: * $todayNNom * {($what/$whatA) * курс * $Dollar} *
+		q!: * {$what * с курсом * $Dollar} * $todayNNom *
+		q!: * $todayNNom * {$what * с курсом * $Dollar} *
+		q!: * {курс $todayAdj} * $Dollar *
+		q!: * {($howMuch/по чем/почем) * (стоит/берут за/покупают/купить) * $Dollar} *
+		go!: /goAnsCommon/Ans_Exchanging_USD
+		#//сколько стоит доллар
+    
     state: My_name_is
         q!: * меня зовут $Imena *
         script:

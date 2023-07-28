@@ -1,5 +1,15 @@
+require: a.sc
 require: b.sc
+require: c.sc
+require: d.sc
 require: g.sc
+require: h.sc
 require: i.sc
+require: m.sc
 require: n.sc
+require: o.sc
 require: otherDicts.sc
+require: p.sc
+require: pronouns.sc
+require: t.sc
+require: w.sc
