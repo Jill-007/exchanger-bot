@@ -25,7 +25,7 @@ theme: /commonQuestions
         go!: /goAnsCommon/Ans_Currency_Exch_Rate
         
     state: USD_rate
-        q!: какой курс доллара на сегодняшний день
+        #q!: какой курс доллара на сегодняшний день
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Dollar} [какой/$pleaseIntj/$information]
         q!: * [какой] * {~курс $Dollar} * $todayNNom *
         q!: {курс (валют*/обмен*)} $Dollar
