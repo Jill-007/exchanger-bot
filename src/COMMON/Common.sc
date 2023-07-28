@@ -28,7 +28,7 @@ theme: /commonQuestions
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Dollar} [какой/$pleaseIntj/$information]
         q!: {курс (валют*/обмен*)} $Dollar
         q!: [у] $Dollar {курс (валют*/обмен*)}
-        q!: * {$Dollar ($todayNNom/$todayAdj)} *
+        q!: * {$Dollar * ($todayNNom/$todayAdj)} *
         q!: * $change [наличн*] $Dollar *
         q!: * $Dollar [наличн*] $change *
         q!: * $wanna * $change * $Dollar *
