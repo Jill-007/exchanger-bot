@@ -25,7 +25,7 @@ theme: /commonQuestions
         go!: /goAnsCommon/Ans_Currency_Exch_Rate
         
     state: USD_rate
-        #q!: какой курс доллара на сегодняшний день
+        #какой курс доллара на сегодняшний день
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Dollar} [какой/$pleaseIntj/$information]
         q!: * [какой] * {~курс $Dollar} * $todayNNom *
         q!: {курс (валют*/обмен*)} $Dollar
@@ -42,6 +42,24 @@ theme: /commonQuestions
         q!: * {($howMuch/по чем/почем) * (стоит/берут за/покупают/купить) * $Dollar} *
         go!: /goAnsCommon/Ans_Exchanging_USD
         #//сколько стоит доллар
+        
+    state: Euro_rate
+        #какой курс евро на сегодняшний день
+        q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Euro} [какой/$pleaseIntj/$information]
+        q!: * [какой] * {~курс $Euro} * $todayNNom *
+        q!: {курс (валют*/обмен*)} $Euro
+        q!: [у] $Euro {курс (валют*/обмен*)}
+        q!: * {$Euro * ($todayNNom/$todayAdj)} *
+        q!: * $change [наличн*] $Euro *
+        q!: * $Euro [наличн*] $change *
+        q!: * $wanna * $change * $Euro *
+        q!: * {($what/$whatA) * курс * $Euro} * $todayNNom *
+        q!: * $todayNNom * {($what/$whatA) * курс * $Euro} *
+        q!: * {$what * с курсом * $Euro} * $todayNNom *
+        q!: * $todayNNom * {$what * с курсом * $Euro} *
+        q!: * {курс $todayAdj} * $Euro *
+        q!: * {($howMuch/по чем/почем) * (стоит/берут за/покупают/купить) * $Euro} *
+        go!: /goAnsCommon/Ans_Exchanging_Euro
     
     state: My_name_is
         q!: * меня зовут $Imena *
