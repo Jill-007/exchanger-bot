@@ -2,6 +2,7 @@ require: a.sc
 require: b.sc
 require: c.sc
 require: d.sc
+require: e.sc
 require: g.sc
 require: h.sc
 require: i.sc
