@@ -10,9 +10,10 @@ theme: /commonQuestions
         
         
     state: Wanna_Exchange
-        q!: [какой/$pleaseIntj/$information] (курс/$about курсе)
-        q!: хочу (обменять/поменять) валюту
-        q!: мне (надо/нужно/хотелось бы) (обменять/поменять) валюту
+        q!: * {($tellVImp/знаешь/выставили) * ~курс} *
+        q!: * {(курс/$about курсе) * ($todayNNom/$todayAdj)} *
+        q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) ($todayNNom/$todayAdj)}
+        q!: * {($need/$wanna) * $change * ($money/~валюта)} *
         q!: обмен
         go!: /goAnsCommon/Ans_Exchanging_All
         
@@ -26,8 +27,9 @@ theme: /commonQuestions
         
     state: USD_rate
         #какой курс доллара на сегодняшний день
+        q!: $Dollar
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Dollar} [какой/$pleaseIntj/$information]
-        q!: * [какой] * {~курс $Dollar} * $todayNNom *
+        q!: * {~курс $Dollar} * $todayNNom *
         q!: {курс (валют*/обмен*)} $Dollar
         q!: [у] $Dollar {курс (валют*/обмен*)}
         q!: * {$Dollar * ($todayNNom/$todayAdj)} *
@@ -41,10 +43,11 @@ theme: /commonQuestions
         q!: * {курс $todayAdj} * $Dollar *
         q!: * {($howMuch/по чем/почем) * (стоит/берут за/покупают/купить) * $Dollar} *
         go!: /goAnsCommon/Ans_Exchanging_USD
-        #//сколько стоит доллар
+        #сколько стоит доллар
         
     state: Euro_rate
         #какой курс евро на сегодняшний день
+        q!: $Euro
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Euro} [какой/$pleaseIntj/$information]
         q!: * [какой] * {~курс $Euro} * $todayNNom *
         q!: {курс (валют*/обмен*)} $Euro
@@ -86,7 +89,4 @@ theme: /commonQuestions
         #//какой сегодня курс
         #//скажи курс/какой у нас курс сегодня/что говорят про курс сегодня/какой сегодня выставили курс
         #//а что за курс/что с курсом/по чем доллар сегодня/расскажи про курс/хочу поменять/обменять валюту/доллары/евро/деньги
-        #//какой курс доллара на сегодняшний день
-        #//какой курс евра на сегодняшний день
-        #//доллары/баксы/зелень/американские деньги/рубли/франклины
         #//знаешь курс?
