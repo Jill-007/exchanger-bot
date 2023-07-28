@@ -10,7 +10,7 @@ theme: /commonQuestions
         
         
     state: Wanna_Exchange
-        q!: * {($tellVImp/знаешь/выставили) * ~курс} *
+        q!: * {($tellVImp/знаешь/выставили/$whatA/$what с) * ~курс} *
         q!: * {(курс/$about курсе) * ($todayNNom/$todayAdj)} *
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) ($todayNNom/$todayAdj)}
         q!: * {($need/$wanna) * $change * ($money/~валюта)} *
@@ -30,6 +30,7 @@ theme: /commonQuestions
         q!: $Dollar
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Dollar} [какой/$pleaseIntj/$information]
         q!: * {~курс $Dollar} * $todayNNom *
+        q!: * $tellVImp * {~курс $Dollar} *
         q!: {курс (валют*/обмен*)} $Dollar
         q!: [у] $Dollar {курс (валют*/обмен*)}
         q!: * {$Dollar * ($todayNNom/$todayAdj)} *
@@ -51,6 +52,7 @@ theme: /commonQuestions
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) [какой/$pleaseIntj/$information] $Euro} [какой/$pleaseIntj/$information]
         q!: * [какой] * {~курс $Euro} * $todayNNom *
         q!: {курс (валют*/обмен*)} $Euro
+        q!: * $tellVImp * {~курс $Euro} *
         q!: [у] $Euro {курс (валют*/обмен*)}
         q!: * {$Euro * ($todayNNom/$todayAdj)} *
         q!: * $change [наличн*] $Euro *
@@ -86,7 +88,7 @@ theme: /commonQuestions
             log("а теперь через xml");
             $reactions.answer("EURO: "+eur+";\n"+"USD: "+usd);
         
-        #//какой сегодня курс
-        #//скажи курс/какой у нас курс сегодня/что говорят про курс сегодня/какой сегодня выставили курс
+        #какой сегодня курс
+        #скажи курс/какой у нас курс сегодня/что говорят про курс сегодня/какой сегодня выставили курс
         #//а что за курс/что с курсом/по чем доллар сегодня/расскажи про курс/хочу поменять/обменять валюту/доллары/евро/деньги
-        #//знаешь курс?
+        #знаешь курс?
