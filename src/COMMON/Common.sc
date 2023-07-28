@@ -14,11 +14,11 @@ theme: /commonQuestions
         q!: * {(курс/$about курсе) * ($todayNNom/$todayAdj)} *
         q!: [какой/$pleaseIntj/$information] {(курс/$about курсе) ($todayNNom/$todayAdj)}
         q!: * {($need/$wanna) * $change * ($money/~валюта)} *
-        q!: обмен
+        q!: {(обмен /$change) ~валюта}
         go!: /goAnsCommon/Ans_Exchanging_All
         
     state: Exchange_X_to_X
-        q!: обменять $Number долларов 
+        q!: {$change $Number $Dollar} 
         go!: /goAnsCommon/Ans_Exchanging
         
     state: Currency_Exchange_Rate
